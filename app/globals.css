@@ -2,3 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --navigation-height: 4.8rem;
+    }
+
+    html {
+        @apply bg-background font-sans text-white;
+        font-size: 62.5%;
+    }
+}
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
+    }
+     .text-gradient {
+        background : linear-gradient(to right bottom, rgb(255, 255, 255), 30% , rgba(255, 255, 255, 0.519));
+        background-clip: text;
+        color: transparent;
+}
+}
+
+@keyframes gisjuz{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+    opacity: 1;
+    transform:none
+    }
+}

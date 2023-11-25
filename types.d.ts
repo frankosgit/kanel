@@ -4,3 +4,13 @@ type AnimatedTextProps = {
   className?: string,
   once ?: boolean,
 }
+
+type HeroProps = {
+  children: React.ReactNode,
+}
+
+type HeroElementProps = {
+  children: React.ReactNode;
+  className?: string,
+}
+

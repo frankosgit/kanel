@@ -1,17 +1,23 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const Hero = () => {
+export const HeroTitle = ({children, className}: HeroElementProps) => {
+  return <h1 
+  className={classNames(
+    "text-gradient text-white text-6xl md:text-8xl my-6", className
+    )}>{children}</h1>
+}
+
+export const HeroSubtitle = ({children, className}: HeroElementProps) => {
+  return <p 
+  className={classNames(
+    "md:text-xl text-lg mb-12 text-shadow", className
+  )}>{children}</p>
+}
+
+export const Hero = ({children}: HeroProps) => {
   return (
-    <div className="hero min-h-screen bg-base-200">
-    <div className="hero-content text-center">
-      <div className="max-w-md">
-        <h1 className="text-5xl font-bold">Hello there</h1>
-        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-        <button className="btn btn-primary">Get Started</button>
-      </div>
-    </div>
-  </div>
+    <div className='text-center text'>{children}</div>
   )
 }
 
-export default Hero
