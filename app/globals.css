@@ -24,7 +24,7 @@
 }
 }
 
-@keyframes gisjuz{
+@keyframes animate1{
     from {
         opacity: 0;
         transform: translateY(-10px);
@@ -32,5 +32,32 @@
     to {
     opacity: 1;
     transform:none
+    }
+}
+
+@keyframes scaleAndSpin {
+    0%{
+        transform: rotateX(25deg);
+    }
+    25%{
+        transform:brotateX(25deg) scale (0.9);
+    }
+    60%, to {
+        transform: none;
+    }
+}
+
+@keyframes backgroundGlow {
+    0%{
+        opacity:0;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    10%{
+        opacity:1;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    100%{
+        opacity:0.8;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }

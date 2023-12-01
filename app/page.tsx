@@ -16,12 +16,12 @@ import HeroImg from '@/components/heroimg/heroimg'
 export default function Home() {
   return (
    
-      <Container>
+      <Container className="overflow-hidden pt-[6.4rem]">
         <Hero>
           <Button href='/' variant="secondary" size="small" className="animate-fade-in opacity-0 translate--y-[-1rem]">New releases coming 2024 - sign up to our newsletter<FontAwesomeIcon className= " pl-1 pr-2 h-[12px]"icon={faArrowRight} style={{ color: '#ffffff' }}/></Button>
-          <HeroTitle className="animate-fade-in [--animation-delay:200ms] opacity-0 translate--y-[-1rem]">Kanel is leading the way<br className="hidden md:block"/> in the electricty industry
+          <HeroTitle className="animate-fade-in [--animation-delay:200ms] opacity-0 translate--y-[-1rem]">Francis Robert Jones<br className="hidden md:block"/> FullStack Developer
           </HeroTitle>
-          <HeroSubtitle className="animate-fade-in [--animation-delay:400ms] opacity-0 translate--y-[-1rem]">KanEL stöttar elnätet med den unika lösningen kallad frekvensreglering. <br className='hidden md:block'/>Lösningar som bidra till både miljövinster såväl som betydande energibesparingar
+          <HeroSubtitle className="animate-fade-in [--animation-delay:400ms] opacity-0 translate--y-[-1rem]">Passion for tech, problemsolving <br className='hidden md:block'/>and a drive to learn.
           </HeroSubtitle>
           <Button href="/" variant="primary" size="large" className="pl-8 animate-fade-in [--animation-delay:600ms] opacity-0 translate--y-[-1rem]"> Get Started <FontAwesomeIcon className= " pl-1 pr-2 h-[12px]"icon={faArrowRight} style={{ color: '#ffffff' }}></FontAwesomeIcon></Button>
           <HeroImg />

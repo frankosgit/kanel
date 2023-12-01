@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 left-0 w-full border-b border-border-white backdrop-blur-[12px] text-white'>
-       <div className= "flex h-[var(--navigation-height)] max-w-[120rem] mx-auto px-8"> 
+       <div className= "flex h-[var(--navigation-height)] max-w-[140rem] mx-auto px-8"> 
         <Link href="/" className="flex items-center text-lg">
             <Logo/>
         </Link>
