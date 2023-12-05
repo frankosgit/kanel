@@ -3,7 +3,7 @@
 import classNames from 'classnames';
 import React, { CSSProperties } from 'react'
 import { useInView } from 'react-intersection-observer'
-import Skills from '@/components/skills/skills'
+import Projects from '@/components/projects/projects'
 
 const HeroImg = () => {
   const { ref, inView} = useInView({threshold: 0.4, triggerOnce: true});
@@ -16,7 +16,7 @@ const HeroImg = () => {
   return (
     <div
     ref ={ref} 
-    className='[perspective:2000px] mt-[12.8rem]'
+    className='[perspective:2000px] mt-[2.8rem]'
     >
     
     <div 
@@ -51,13 +51,9 @@ const HeroImg = () => {
 
       </div>
 
-        <img src="/images/kaneltest.jpg" alt="hero"
-        className={classNames(
-          'relative z-10 opacity-0 transition-opacity delay-[690ms]',
-          inView ? "opacity-100" : "opacity-0"
-          )}
-        />
-    </div>
+      <Projects/>
+      
+    </div> 
     </div>
   )
 }

@@ -22,6 +22,7 @@ const config: Config = {
         transparent: "transparent",
         "primary-text": "rbg(180, 188, 208)",
         offWhite: "#f7f8f8",
+        black: "#000",
     },
       fontSize: {
         xs: "1.3rem",

@@ -53,7 +53,7 @@ const Header = () => {
 
        <div className='ml-auto h-full flex items-center'>
         <Link href="#" className='text-sm mr-6'>Sign up</Link>
-        <Button href="#" variant="primary" size="medium" className="">Logga in</Button>
+        <Button href="#" variant="primary" size="medium" className="">Contact me</Button>
        </div>
         <button className="ml-6 md:hidden" 
         onClick={() => setIsOpen(isOpen => !isOpen)}>
